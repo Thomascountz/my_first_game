@@ -9,12 +9,12 @@ def delay(sleep_time):
 	
 def decision(valid):
 	"""Takes an input and returns invalid or returns the input, as decided by the caller."""
-	elif valid == True:
+	if valid == True:
 		choice = raw_input("Which one? > ")
 		print "Sounds like a good idea."
 		delay(2)
 		return choice
-	if valid == False:
+	elif valid == False:
 		print "Wait."
 		delay(2)
 		print "That's not an option, try again."
